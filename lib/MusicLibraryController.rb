@@ -71,7 +71,7 @@ class MusicLibraryController
     user_input = gets.chomp
     if user_input != nil
       
-      #binding.pry
+      binding.pry
     end
     
   end
