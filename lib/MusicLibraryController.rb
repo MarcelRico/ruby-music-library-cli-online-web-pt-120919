@@ -76,7 +76,6 @@ class MusicLibraryController
     if selected_song != nil && user_input >= 1 && user_input < total_song_count
       puts "Playing #{selected_song.name} by #{selected_song.artist.name}"
     end
-    
   end
   
 end
