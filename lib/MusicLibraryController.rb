@@ -11,7 +11,6 @@ class MusicLibraryController
   end
   
   def call
-    
       exit_flag = false
       while !exit_flag 
         puts "Welcome to your music library!"
@@ -25,6 +24,9 @@ class MusicLibraryController
         puts "What would you like to do?"
         user_input = gets.chomp
         exit_flag = true if user_input == "exit"
+        
+        case
+        
       end
   end
   
