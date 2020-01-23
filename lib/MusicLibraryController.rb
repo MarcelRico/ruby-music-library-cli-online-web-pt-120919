@@ -72,8 +72,7 @@ class MusicLibraryController
     user_input = gets.chomp
     selected_song = Song.all.sort{|a,b| a.name <=> b.name}[user_input.to_i - 1]
     
-    if selected_song != nil && user_input > 1 && user_input < total_song_count
-      
+    if selected_song != nil
       puts "Playing #{selected_song.name} by #{selected_song.artist.name}"
     end
     
