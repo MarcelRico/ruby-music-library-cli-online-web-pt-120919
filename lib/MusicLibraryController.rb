@@ -25,7 +25,11 @@ class MusicLibraryController
         user_input = gets.chomp
         exit_flag = true if user_input == "exit"
         
-        case
+        case user_input
+        
+        when "list songs"
+          list_songs
+        end
         
       end
   end
