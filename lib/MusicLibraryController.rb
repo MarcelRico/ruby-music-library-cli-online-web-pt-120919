@@ -61,6 +61,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     songs = list_songs_by_item(Artist)
+    songs.each_with_index{|song,idx| puts "#{idx+1}. #{song.name} - #{song.genre.name}"}
   end
   
   def list_songs_by_genre
