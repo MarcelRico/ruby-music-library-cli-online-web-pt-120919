@@ -60,7 +60,7 @@ class MusicLibraryController
   
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
-
+    songs = 
   end
   
   def list_songs_by_genre
