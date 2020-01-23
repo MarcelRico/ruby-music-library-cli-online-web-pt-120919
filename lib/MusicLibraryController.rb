@@ -71,7 +71,7 @@ class MusicLibraryController
     user_input = gets.chomp
     if user_input != nil
       selected_song = Song.all.sort{|a,b| a.name <=> b.name}[user_input.to_i - 1]
-      puts "Now Playing #{selected_song.name} by #{selected_song.artist.name}"
+      puts "Playing #{selected_song.name} by #{selected_song.artist.name}"
     end
     
   end
