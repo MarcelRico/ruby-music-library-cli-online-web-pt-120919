@@ -32,6 +32,10 @@ module Concerns
         return song_obj
       end
     end
+    
+    def list_obj
+      
+    end
       
   end
 end
