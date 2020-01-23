@@ -45,7 +45,6 @@ module Concerns
       if item_obj != nil
         songs = item_obj.songs.sort{|a,b| a.name <=> b.name}
         return songs
-        songs.each_with_index{|song,idx| puts "#{idx+1}. #{song.name} - #{song.genre.name}"}
       end
     end
       
