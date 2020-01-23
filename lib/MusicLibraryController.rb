@@ -70,6 +70,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     user_input = gets.chomp
     if user_input != nil
+      selected_song = Song.all.map{|song| song.name}.sort[3]
       
       binding.pry
     end
