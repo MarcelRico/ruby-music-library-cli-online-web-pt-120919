@@ -40,10 +40,10 @@ module Concerns
     end
     
     def list_songs_by_item(klass)
-      artist_name = gets.chomp
-      artist_obj = Artist.find_by_name(artist_name)
-      if artist_obj != nil
-        songs = artist_obj.songs.sort{|a,b| a.name <=> b.name}
+      item_name = gets.chomp
+      item_obj = klass.find_by_name(item_name)
+      if item_obj != nil
+        songs = item_obj.songs.sort{|a,b| a.name <=> b.name}
         songs.each_with_index{|song,idx| puts "#{idx+1}. #{song.name} - #{song.genre.name}"}
       end
     end
