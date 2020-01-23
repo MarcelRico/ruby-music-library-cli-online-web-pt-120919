@@ -51,9 +51,7 @@ class MusicLibraryController
   end
   
   def list_artists
-    artists = Artist.all
-    artists.sort!{|a,b| a.name <=> b.name}
-    artists.each_with_index{|artist,idx| puts "#{idx+1}. #{artist.name}"}
+    list_obj(Artist)
   end
   
   def list_genres
