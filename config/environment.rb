@@ -38,15 +38,6 @@ module Concerns
       items.sort!{|a,b| a.name <=> b.name}
       items.each_with_index{|item,idx| puts "#{idx+1}. #{item.name}"}
     end
-    
-    def list_songs_by_item(klass)
-      item_name = gets.chomp
-      item_obj = klass.find_by_name(item_name)
-      if item_obj != nil
-        songs = item_obj.songs.sort{|a,b| a.name <=> b.name}
-        return songs
-      end
-    end
       
   end
 end
