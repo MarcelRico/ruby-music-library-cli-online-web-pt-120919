@@ -33,8 +33,10 @@ module Concerns
       end
     end
     
-    def list_obj
-      
+    def list_obj(klass)
+      items = klass.all
+      items.sort!{|a,b| a.name <=> b.name}
+      items.each_with_index{|item,idx| puts "#{idx+1}. #{item.name}"}
     end
       
   end
